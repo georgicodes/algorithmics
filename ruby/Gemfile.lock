@@ -1,0 +1,12 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    awesome_print (1.2.0)
+    gratr (0.4.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  awesome_print
+  gratr
