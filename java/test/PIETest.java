@@ -1,7 +1,10 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class PIETest {
 
@@ -49,5 +52,29 @@ public class PIETest {
   public void shouldRemoveChars2() {
     String result = pie.removeChars("Battle of the Vowels: Hawaii vs. Grozny", "aeiou");
     assertEquals("Bttl f th Vwls: Hw vs. Grzny", result);
+  }
+
+  @Test
+  public void shouldBePalindrome() {
+    boolean res = pie.isPalindrome("abba");
+    assertTrue(res);
+  }
+
+  @Test
+  public void shouldBePalindrome2() {
+    boolean res = pie.isPalindrome("aba");
+    assertTrue(res);
+  }
+
+  @Test
+  public void shouldBePalindrome3() {
+    boolean res = pie.isPalindrome("a");
+    assertTrue(res);
+  }
+
+  @Test
+  public void shouldFindMedianOfTwoSortedArrays() {
+    int median = pie.findMedianOfTwoSortedArrays(new int[]{1, 11, 12, 15}, new int[]{2, 4, 5, 6, 7, 8, 19});
+    assertEquals(7, median);
   }
 }

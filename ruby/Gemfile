@@ -3,5 +3,5 @@ source "https://rubygems.org"
 
 gem "gratr"
 gem "awesome_print"
-#gem 'ruby-debug-ide', '~> 0.4.22'
-#gem 'ruby-debug-base', '~> 0.10.4'
+gem "rspec"
+gem 'rubocop', require: false
